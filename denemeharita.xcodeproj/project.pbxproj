@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191E0123265E91B800C308F0 /* secondvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E0122265E91B800C308F0 /* secondvc.swift */; };
 		19264725265C2840004D278B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19264724265C2840004D278B /* AppDelegate.swift */; };
 		19264727265C2840004D278B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19264726265C2840004D278B /* SceneDelegate.swift */; };
 		19264729265C2840004D278B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19264728265C2840004D278B /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191E0122265E91B800C308F0 /* secondvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondvc.swift; sourceTree = "<group>"; };
 		19264721265C2840004D278B /* denemeharita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = denemeharita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19264724265C2840004D278B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19264726265C2840004D278B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				19264726265C2840004D278B /* SceneDelegate.swift */,
 				19264728265C2840004D278B /* ViewController.swift */,
 				1926472A265C2840004D278B /* Main.storyboard */,
+				191E0122265E91B800C308F0 /* secondvc.swift */,
 				19264730265C2841004D278B /* Assets.xcassets */,
 				19264732265C2841004D278B /* LaunchScreen.storyboard */,
 				19264735265C2841004D278B /* Info.plist */,
@@ -264,6 +267,7 @@
 				1926472F265C2840004D278B /* denemeharita.xcdatamodeld in Sources */,
 				19264729265C2840004D278B /* ViewController.swift in Sources */,
 				19264725265C2840004D278B /* AppDelegate.swift in Sources */,
+				191E0123265E91B800C308F0 /* secondvc.swift in Sources */,
 				19264727265C2840004D278B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

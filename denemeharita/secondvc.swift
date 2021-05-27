@@ -6,16 +6,49 @@
 //
 
 import UIKit
-
+import CoreData
 class secondvc: UIViewController {
-
+    var longitude = Double();
+    var latitude = Double();
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func silbut(_ sender: Any) {
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate;
+        let context = appdelegate.persistentContainer.viewContext;
+        let fetch = NSFetchRequest<NSFetchRequestResult>.init(entityName:"Locations");
+        fetch.returnsObjectsAsFaults = false
+        fetch.predicate = NSPredicate(format:"latitude == \(latitude) AND longitude == \(longitude)");
+        do{
+            let datas = try context.fetch(fetch)
+            if(datas.count > 0){
+            for data in datas as! [NSManagedObject]{
+                context.delete(data)
+                print("sil");
+                performSegue(withIdentifier: "geridon", sender: nil)
+                do{
+                    try context.save()
+                    
+                }
+                catch{
+                    print("error");
+                }
+            }
+                
+            }
+            else{
+                print("orospu çocuğu");
+            }
+                
+        }
+        catch{
+            print("error");
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
